@@ -1,0 +1,102 @@
+{% extends 'betterchecks_app/base_template.html' %}
+{% block body_block %}
+{% load static %}
+<div class="container-full bg-dark">
+<div class="container-full">
+<div class="container bg-light"><br /><br />
+<h1 class="text-center"><strong><b>CONTACT US</b></strong></h1><br /><br />
+    <div class="row">
+        <div class="col-md-6"><br /><br />
+        <p>
+            Betachecks is an initiative of Better Civic International Foundation (Bettercivic.com) using investigative journalism to reveal facts and truths to stop misinformation, fake news while also promoting media literacy and accountability. 
+        </p><br /><br />
+        <p class="text-center"><strong><b>
+            CONTACT DETAILS
+        </b></strong></p>
+            <hr style="width:40%;text-align:center; height: 2px; background-color: orange;"><br />
+             <p ><strong><b>
+            Better Civic International Foundation Office
+        </b></strong></p><br />
+            <address>
+           <p>Currently working remotely: 13, Tijani Street, Iyana Ipaja, Lagos, Nigeria</p> 
+                <p><span><strong>Tel:</strong></span> +2347057020088</p><br />
+                <p><span><strong>Website:</strong></span> <a href="https://www.betachecks.com">www.betachecks.com</a></p><br />
+                <p><span><strong>Email:</strong></span> bettercivic@gmail.com</p>
+            </address>
+        </div>
+        <div class="col-md-6">
+         <div class="container-full border bg-light"><br /><br />
+        <h3 class="text-center">Get in touch with us</h3>
+        <div class="container">
+            <div class="container">
+            <div class="container">
+            <div class="container">
+            <div class="container">
+            <form method="POST">
+    {% if messages %}
+<ul class="messages text-danger">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+            {% load bootstrap %}
+            {{ form|bootstrap }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-warning" value="Submit" /><br /><br /><br />
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+      <div class="container-full bg-dark" style="padding:40px">
+          
+    </div>
+<footer>
+ <div class="container-full bg-dark"><br />
+     <div class="container">
+     <div class="row">
+        <div class="col-md-3">
+            <h5 class="text-white">ABOUT</h5>
+            <p class="text-white">
+                Betachecks is deploying an open and ever growing trainings platform providing access to curated contents related to fact checking, media literacy and accountability, media freedom and pluralism in Africa.
+            </p>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">OUR SERVICES</h5>
+             <a class="text-white nav-link">Education</a>
+             <a class="text-white nav-link">Health</a>
+             <a class="text-white nav-link">Environment</a>
+             <a class="text-white nav-link">Socio-Economy Development</a>
+             <a class="text-white nav-link">Science</a>
+             <a class="text-white nav-link">Training</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">QUICK LINKS</h5>
+              <a class="text-white nav-link">Home</a>
+             <a class="text-white nav-link">Fact Checking</a>
+             <a class="text-white nav-link">Money Train</a>
+             <a class="text-white nav-link">Shady Spotlight</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">FOLLOW US</h5>
+                <a class="nav-link text-white" href="https://www.facebook.com/BetaChecks/" target="_blank"><img src="{% static 'images/facebook.png' %}" alt="social media icon"> Facebook</a>
+            <a class="nav-link text-white" href="https://twitter.com/BetaChecks?s=08" target="_blank"><img src="{% static 'images/twitter.png' %}" alt="social media icon"> Twitter</a>
+            <a class="nav-link text-white" href="https://www.youtube.com/channel/UC7NkJt7njv4HFvjCNi6QGmw/" target="_blank"><img src="{% static 'images/youtube.png' %}" alt="social media icon"> Youtube</a>
+         </div>
+     </div>
+</div>
+     </div>
+    <div class="container-full bg-dark" style="padding:10px"><br /><br />
+        <hr />
+        <p class="text-muted text-center">Copyright &copy; 2020. Betachecks | All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

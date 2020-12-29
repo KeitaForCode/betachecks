@@ -1,0 +1,100 @@
+{% extends 'betterchecks_app/base_template.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="container-full  bg-dark">
+    <div class="container-full">
+        <div class="container bg-light"><br /><br />
+            <h4 class="text-center"><strong>FACTCHECKING AT BETACHECKS</strong></h4><br /><br />
+            <p>Betachecks is offering data-driven evidenced based honest information and reliable fact checking by digging deeper to reveal the forces behind the flood of misinformation, disinformation and fake news emerging to be toxic mix of fringe ideological groups, commercial scammers, public actors, “dark PR” agents, conspiracy news networks, and even students just seeking attention or tiny financial rewards
+            Investigative journalists should focus on digging into the people and money behind disinformation campaigns, rather than trying to debunk the thousands of bogus claims out there
+            should focus primarily on the people and the money behind these campaigns, rather than on debunking the false claims that they generate and spread.
+            </p><br /><br />
+            <hr />
+            <h4 class="text-center"><strong>OUR FACT-CHECKING APPROACHES</strong></h4><br /><br />
+              
+            <p><span class="bg-warning"><strong>1ST APPROACH:</strong></span><b class="text-success"> Search for the Source by taking the following Steps</b></p>
+            <p><b>Using Reserve Image Search</b></p>
+            <p>If you have questions about veracity of an image or video you can use Google Image Search <a href="https://www.google.com.ng/imghp?hl=en&tab=wi&ogbl">(images.google.com). </a></p>
+            <ol>
+            <li><p>Grab the URL for the photo that you are curious about, or download it to your computer. If using Google Chrome browser, you can right click and select "Search Google for Image"</p></li>
+            <li><p>Go to Google Images and click on the Camera Icon.</p></li>
+                <img src="{% static 'images/imgsrc.png'%}" class="d-block w-100" alt="..."><br /><br />
+            <li>Paste the URL or upload your image.</li><br />
+                <img src="{% static 'images/imgsrc2.png'%}" class="d-block w-100" alt="..."><br /><br /><br />
+                <li><p>See the results to find the original source, or what the web is saying about the images. This can also be done with screenshots from videos.</p></li>
+            </ol><br />
+            
+            <p><span class="bg-warning"><strong>2ND APPROACH:</strong></span><b class="text-success"> Leveraging on the following Tools to Identify Actors Behind Disinformation </b></p>
+            <ul>
+            <li><p><span><strong>Hoaxy. </strong></span>
+                It is an open-source tool used to visualize the spread of posts and articles online, search articles from low-credibility sources, and also plot the cumulative number of shares over time.
+            </p></li>  <li><p><span><strong>CrowdTangle.  </strong></span>
+               It is one of the most powerful single tool in the field of disinformation. This social media monitoring platform provides deep insights into how content is being shared across platforms like Facebook, Instagram, and Reddit.
+            </p></li>  <li><p><span><strong>Graphika.  </strong></span>
+                It is use to map the social media landscape, and find connections between domains. It brings clarity to complex social networks, analyzing how they form, evolve, manipulated. A complex but effective tool for visualizing misinformation flows in graphic form is Gephi.
+            </p></li>  <li><p><span><strong>Investigation. </strong></span>
+              •	To carry out investigation on financially-driven disinformation and scams, tools like <a href="https://www.DNSlytics.com">DNSlytics.com</a>  can help trace ads and suspicious commercial activities across sites. Premium accounts carry a small fee. For newsrooms with large investigative budgets, Adbeat is a tool that trawls the web and provides useful intelligence on display ads. 
+            </p></li>  <li><p><span><strong>Whopostedwhat.   </strong></span>
+               is a tool designed for public interest investigators that allows you to search Facebook for keywords by date; along with the video verification tool InVID and CrowdTangle. it has emerged as a go-to tool for tracking the actors behind misleading social media posts.
+            </p></li>  <li><p><span><strong>We can Google Search to find questions, </strong></span>
+              rather than answers by typing half a question into Google, like “Why is the federal government …” supplies frequently searched questions that can give reporters a sense of what communities’ suspect, or don’t know, when consuming news. 
+            </p></li>
+            </ul><br /><br />
+             <p><span class="bg-warning"><strong>3RD APPROACH:</strong></span><b class="text-success"> We can also Dig deeper using the following Tools for Digital Investigations based on the Context of the research at hand.</b></p>
+            <ul>
+                <li><p><span><strong>Video analysis: </strong></span> YouTube Data Viewer and InVID verification.</p></li>
+                <li><p><span><strong>Website analysis: </strong></span>  Domain Big Data, Whoisology, and ViewDNS.</p></li>
+                <li><p><span><strong>Social media searches: </strong></span>  Foller.me, Followerwonk, and Twitonomy (Twitter analytics), Who posted what? (Facebook keyword searches), and Gramspy (Instagram search).</p></li>
+                <li><p><span><strong>Finding people online: </strong></span>  Name2Email, Spokeo (US only), and Pipl.</p></li>
+                <li><p><span><strong>Online ad analysis:  </strong></span> Moat.</p></li>
+                <li><p><span><strong>Photo analysis: </strong></span>  TinEye and Yandex.</p></li>
+                <li><p><span><strong>Online histories: </strong></span>  Wayback Machine.</p></li>
+            </ul><br /><br />
+        </div>
+              <div class="container-full bg-dark" style="padding:40px">
+          
+    </div>
+<footer>
+ <div class="container-full bg-dark"><br />
+     <div class="container">
+     <div class="row">
+        <div class="col-md-3">
+            <h5 class="text-white">ABOUT</h5>
+            <p class="text-white">
+                Betachecks is deploying an open and ever growing trainings platform providing access to curated contents related to fact checking, media literacy and accountability, media freedom and pluralism in Africa.
+            </p>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">OUR SERVICES</h5>
+             <a class="text-white nav-link">Education</a>
+             <a class="text-white nav-link">Health</a>
+             <a class="text-white nav-link">Environment</a>
+             <a class="text-white nav-link">Socio-Economy Development</a>
+             <a class="text-white nav-link">Science</a>
+             <a class="text-white nav-link">Training</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">QUICK LINKS</h5>
+              <a class="text-white nav-link">Home</a>
+             <a class="text-white nav-link">Fact Checking</a>
+             <a class="text-white nav-link">Money Train</a>
+             <a class="text-white nav-link">Shady Spotlight</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">FOLLOW US</h5>
+                <a class="nav-link text-white" href="https://www.facebook.com/BetaChecks/" target="_blank"><img src="{% static 'images/facebook.png' %}" alt="social media icon"> Facebook</a>
+            <a class="nav-link text-white" href="https://twitter.com/BetaChecks?s=08" target="_blank"><img src="{% static 'images/twitter.png' %}" alt="social media icon"> Twitter</a>
+            <a class="nav-link text-white" href="https://www.youtube.com/channel/UC7NkJt7njv4HFvjCNi6QGmw/" target="_blank"><img src="{% static 'images/youtube.png' %}" alt="social media icon"> Youtube</a>
+         </div>
+     </div>
+</div>
+     </div>
+    <div class="container-full bg-dark" style="padding:10px"><br /><br />
+        <hr />
+        <p class="text-muted text-center">Copyright &copy; 2020. Betachecks | All rights reserved.</p>
+    </div>
+</footer>
+    </div>
+</div>
+{% endblock %}

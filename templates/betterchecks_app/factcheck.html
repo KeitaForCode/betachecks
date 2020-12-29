@@ -1,0 +1,94 @@
+{% extends 'betterchecks_app/base_template.html' %}
+{% block body_block %}
+{% load static %}
+<div class="container-full bg-dark">
+<div class="container-full">
+<div class="container bg-light"><br /><br />
+<h1 class="text-center"><strong><b>FACT CHECKING</b></strong></h1><br /><br />
+    <div class="row">
+        <div class="col-md-6">
+    <p>
+        Betachecks is deploying fact checking system and strategies to sanitize fake and misleading news stories spreading on social media and also providing easy to use weapons of handling information shared online with the general public, young journalist and professionals. Our provision for access to the tools, resources and techniques of spotting social engineering is necessitated to stop the spread and educate everyone to become smart information reader and conceiver by knowing how to do self-investigation, identify and untangle media manipulation, by accessing free-to-use tactics and strategies to detect and sort out online misinformation and “fake news with an effort to promote media literacy and accountability in Africa.
+    </p><br /><br /><br />
+            <hr /><br /><br />
+     <p class="text-center"><strong><b>
+       If you wish to get in touch with the editors to report or suggest a claim for a fact-check and flag up or point out an error, please leave a message below. 
+     </b></strong></p>
+        
+        </div>
+        <div class="col-md-6">
+     <div class="container-full border bg-light"><br /><br />
+        <h3 class="text-center">Get in touch with us</h3>
+        <div class="container">
+            <div class="container">
+            <div class="container">
+            <div class="container">
+            <div class="container">
+            <form method="POST">
+    {% if messages %}
+<ul class="messages text-danger">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+            {% load bootstrap %}
+            {{ form|bootstrap }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-warning" value="Submit" /><br /><br /><br />
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+      <div class="container-full bg-dark" style="padding:40px">
+          
+    </div>
+<footer>
+ <div class="container-full bg-dark"><br />
+     <div class="container">
+     <div class="row">
+        <div class="col-md-3">
+            <h5 class="text-white">ABOUT</h5>
+            <p class="text-white">
+                Betachecks is deploying an open and ever growing trainings platform providing access to curated contents related to fact checking, media literacy and accountability, media freedom and pluralism in Africa.
+            </p>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">OUR SERVICES</h5>
+             <a class="text-white nav-link">Education</a>
+             <a class="text-white nav-link">Health</a>
+             <a class="text-white nav-link">Environment</a>
+             <a class="text-white nav-link">Socio-Economy Development</a>
+             <a class="text-white nav-link">Science</a>
+             <a class="text-white nav-link">Training</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">QUICK LINKS</h5>
+              <a class="text-white nav-link">Home</a>
+             <a class="text-white nav-link">Fact Checking</a>
+             <a class="text-white nav-link">Money Train</a>
+             <a class="text-white nav-link">Shady Spotlight</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">FOLLOW US</h5>
+                <a class="nav-link text-white" href="https://www.facebook.com/BetaChecks/" target="_blank"><img src="{% static 'images/facebook.png' %}" alt="social media icon"> Facebook</a>
+            <a class="nav-link text-white" href="https://twitter.com/BetaChecks?s=08" target="_blank"><img src="{% static 'images/twitter.png' %}" alt="social media icon"> Twitter</a>
+            <a class="nav-link text-white" href="https://www.youtube.com/channel/UC7NkJt7njv4HFvjCNi6QGmw/" target="_blank"><img src="{% static 'images/youtube.png' %}" alt="social media icon"> Youtube</a>
+         </div>
+     </div>
+</div>
+     </div>
+    <div class="container-full bg-dark" style="padding:10px"><br /><br />
+        <hr />
+        <p class="text-muted text-center">Copyright &copy; 2020. Betachecks | All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

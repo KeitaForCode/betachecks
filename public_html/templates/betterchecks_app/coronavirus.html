@@ -1,0 +1,58 @@
+{% extends 'betterchecks_app/base_template.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="container-full bg-dark">
+    <div class="container-full">
+        <div class="container bg-light"><br /><br />
+        <h1 class="text-center"><strong><b>CORONAVIRUS</b></strong></h1><br />
+            
+            <hr /><br />
+            <img src="{% static 'images/corona.png' %}" width="100%" /><br /><br /><br />
+        </div>
+    </div>
+</div>
+      <div class="container-full bg-dark" style="padding:40px">
+          
+    </div>
+<footer>
+ <div class="container-full bg-dark"><br />
+     <div class="container">
+     <div class="row">
+        <div class="col-md-3">
+            <h5 class="text-white">ABOUT</h5>
+            <p class="text-white">
+                Betachecks is deploying an open and ever growing trainings platform providing access to curated contents related to fact checking, media literacy and accountability, media freedom and pluralism in Africa.
+            </p>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">OUR SERVICES</h5>
+             <a class="text-white nav-link">Education</a>
+             <a class="text-white nav-link">Health</a>
+             <a class="text-white nav-link">Environment</a>
+             <a class="text-white nav-link">Socio-Economy Development</a>
+             <a class="text-white nav-link">Science</a>
+             <a class="text-white nav-link">Training</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">QUICK LINKS</h5>
+              <a class="text-white nav-link">Home</a>
+             <a class="text-white nav-link">Fact Checking</a>
+             <a class="text-white nav-link">Money Train</a>
+             <a class="text-white nav-link">Shady Spotlight</a>
+         </div>
+         <div class="col-md-3">
+            <h5 class="text-white">FOLLOW US</h5>
+                <a class="nav-link text-white" href="https://www.facebook.com/BetaChecks/" target="_blank"><img src="{% static 'images/facebook.png' %}" alt="social media icon"> Facebook</a>
+            <a class="nav-link text-white" href="https://twitter.com/BetaChecks?s=08" target="_blank"><img src="{% static 'images/twitter.png' %}" alt="social media icon"> Twitter</a>
+            <a class="nav-link text-white" href="https://www.youtube.com/channel/UC7NkJt7njv4HFvjCNi6QGmw/" target="_blank"><img src="{% static 'images/youtube.png' %}" alt="social media icon"> Youtube</a>
+         </div>
+     </div>
+</div>
+     </div>
+    <div class="container-full bg-dark" style="padding:10px"><br /><br />
+        <hr />
+        <p class="text-muted text-center">Copyright &copy; 2020. Betachecks | All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}
